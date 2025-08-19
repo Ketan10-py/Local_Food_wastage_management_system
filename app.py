@@ -17,36 +17,42 @@ st.set_page_config(
 # Custom CSS
 st.markdown("""
     <style>
+    /* Header Text */
     .header-text {
         font-size: 36px !important;
         font-weight: 700 !important;
-        color: #2c3e50 !important;
+        color: #1a1a1a !important;   /* Deep charcoal for timeless readability */
         text-align: center;
         padding: 15px;
         border-radius: 10px;
-        background: linear-gradient(135deg, #6dd5ed, #2193b0);
+        background: linear-gradient(135deg, #f4f4f4, #e0e0e0);  /* Elegant light grey tones */
         box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         margin-bottom: 25px;
     }
+
+    /* Metric Card */
     .metric-card {
-        background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
-        color: white;
+        background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%); /* Classic navy/charcoal gradient */
+        color: #fdfdfd;
         border-radius: 12px;
         padding: 15px;
         text-align: center;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.15);
     }
+
+    /* Section Header */
     .section-header {
         font-size: 24px !important;
         font-weight: 700 !important;
-        color: #2c3e50;
-        border-left: 5px solid #3498db;
+        color: #2c3e50;   /* Navy-charcoal */
+        border-left: 5px solid #b8860b;  /* Golden accent */
         padding-left: 15px;
         margin-top: 20px;
         margin-bottom: 20px;
     }
     </style>
     """, unsafe_allow_html=True)
+
 
 # --------------------------
 # Load Data
@@ -223,3 +229,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
